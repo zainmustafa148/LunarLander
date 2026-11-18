@@ -143,4 +143,69 @@ The baseline agent achieved the best overall evaluation performance in these exp
 
 GitHub: [@zainmustafa148](https://github.com/zainmustafa148)
 
+---
+
+Results & Visualizations
+
+This section presents the training performance, reward hacking behavior, and evaluation results of the three PPO agents.
+
+Training Performance
+
+Baseline PPO — Training Reward
+
+"Baseline PPO Training Reward" (results/graphs/training_reward_graph.png)
+
+Reward Hacking Analysis
+
+Bad Reward PPO — Evaluation Results
+
+"Bad Reward Evaluation Graph" (results/graphs/bad_reward_eval_graph.png)
+
+Bad Reward PPO — Training Performance
+
+"Bad Reward Training Graph" (results/graphs/bad_reward_training_graph.png)
+
+Reward Hacking Comparison
+
+"Reward Hacking Comparison" (results/graphs/reward_hacking_comparison.png)
+
+Simulation Videos
+
+Watch the trained agents interact with the LunarLander-v3 environment:
+
+Bad Reward PPO Simulation
+
+"Watch Bad Reward Episode 1" (results/videos/bad_reward_episode_1.mp4)
+
+Successful LunarLander Simulation
+
+"Watch Successful Landing" (results/videos/lunar_lander_success.mp4)
+
+Experimental Data
+
+The following CSV files contain training logs, evaluation results, and comparison data.
+
+File| Description
+"training_episodes_log.csv"| Baseline training episode logs
+"training_progress_log.csv"| Baseline training progress
+"bad_reward_eval_custom_env.csv"| Bad reward evaluation in custom environment
+"bad_reward_eval_original_env.csv"| Bad reward evaluation in original environment
+"bad_reward_training_episodes_log.csv"| Bad reward episode logs
+"bad_reward_training_progress_log.csv"| Bad reward training progress
+"improved_reward_eval_improved_env.csv"| Improved reward evaluation in shaped environment
+"improved_reward_eval_original_env.csv"| Improved reward evaluation in original environment
+"improved_reward_training_episodes_log.csv"| Improved reward episode logs
+"improved_reward_training_progress_log.csv"| Improved reward training progress
+"phase3_comparison_per_episode.csv"| Per-episode comparison of all three agents
+"phase3_comparison_summary.csv"| Summary of experimental results
+
+Results Summary
+
+Agent| Mean Original Reward| Successful Landings
+Baseline PPO| 260.5| 10/10
+Bad Reward PPO| -599.2| 0/10
+Improved Reward PPO| 230.2| 9/10
+
+Key Observation: The baseline PPO achieved the highest mean original reward. The intentionally flawed reward function demonstrated reward hacking, while Potential-Based Reward Shaping substantially improved performance compared with the bad reward agent, although it did not outperform the baseline.
+
 
