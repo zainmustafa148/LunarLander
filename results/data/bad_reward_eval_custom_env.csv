@@ -1,0 +1,11 @@
+episode,seed,custom_reward,original_reward,length,outcome_original_rule,wrapper_landing_bonus,terminated,truncated
+1,2024,999.0,-602.0616195225613,1000,TIMEOUT (hovering),False,False,True
+2,2025,999.0,-596.6470723623561,1000,TIMEOUT (hovering),False,False,True
+3,2026,999.0,-623.214305713869,1000,TIMEOUT (hovering),False,False,True
+4,2027,999.0,-585.0677627342221,1000,TIMEOUT (hovering),False,False,True
+5,2028,999.0,-595.7730166838259,1000,TIMEOUT (hovering),False,False,True
+6,2029,999.0,-607.9343376693367,1000,TIMEOUT (hovering),False,False,True
+7,2030,999.0,-625.8108601872311,1000,TIMEOUT (hovering),False,False,True
+8,2031,999.0,-582.417474405958,1000,TIMEOUT (hovering),False,False,True
+9,2032,999.0,-596.6103259386799,1000,TIMEOUT (hovering),False,False,True
+10,2033,999.0,-576.5045651245464,1000,TIMEOUT (hovering),False,False,True

@@ -1,0 +1,4 @@
+model,mean_original_reward,std_original_reward,mean_length,landed,crashed,timeout,solved_200
+Baseline PPO,260.50428915057415,19.711774564256963,377.6,10,0,0,10
+Bad Reward PPO,-599.2041340342587,15.461973464885244,1000.0,0,0,10,0
+Improved Reward PPO,230.20451237308777,72.26519497857032,411.7,9,1,0,9

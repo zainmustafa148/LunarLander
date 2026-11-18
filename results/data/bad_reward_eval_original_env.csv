@@ -1,0 +1,11 @@
+episode,seed,original_reward,length,outcome,terminated,truncated
+1,2024,-602.0616195225613,1000,TIMEOUT (hovering),False,True
+2,2025,-596.6470723623561,1000,TIMEOUT (hovering),False,True
+3,2026,-623.214305713869,1000,TIMEOUT (hovering),False,True
+4,2027,-585.0677627342221,1000,TIMEOUT (hovering),False,True
+5,2028,-595.7730166838259,1000,TIMEOUT (hovering),False,True
+6,2029,-607.9343376693367,1000,TIMEOUT (hovering),False,True
+7,2030,-625.8108601872311,1000,TIMEOUT (hovering),False,True
+8,2031,-582.417474405958,1000,TIMEOUT (hovering),False,True
+9,2032,-596.6103259386799,1000,TIMEOUT (hovering),False,True
+10,2033,-576.5045651245464,1000,TIMEOUT (hovering),False,True
