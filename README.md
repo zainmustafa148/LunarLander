@@ -183,22 +183,22 @@ Watch the trained agents interact with the LunarLander-v3 environment:
 
 ### Experimental Data
 
-The following CSV files contain training logs, evaluation results, and comparison data.
+The following CSV files contain training logs, evaluation results, and model comparison data. Click any file to view its contents.
 
-| File | Description |
+| CSV File | Description |
 |---|---|
-| `training_episodes_log.csv` | Baseline training episode logs |
-| `training_progress_log.csv` | Baseline training progress |
-| `bad_reward_eval_custom_env.csv` | Bad reward evaluation in custom environment |
-| `bad_reward_eval_original_env.csv` | Bad reward evaluation in original environment |
-| `bad_reward_training_episodes_log.csv` | Bad reward episode logs |
-| `bad_reward_training_progress_log.csv` | Bad reward training progress |
-| `improved_reward_eval_improved_env.csv` | Improved reward evaluation in shaped environment |
-| `improved_reward_eval_original_env.csv` | Improved reward evaluation in original environment |
-| `improved_reward_training_episodes_log.csv` | Improved reward episode logs |
-| `improved_reward_training_progress_log.csv` | Improved reward training progress |
-| `phase3_comparison_per_episode.csv` | Per-episode comparison of all three agents |
-| `phase3_comparison_summary.csv` | Summary of experimental results |
+| [training_episodes_log.csv](results/data/training_episodes_log.csv) | Baseline training episode logs |
+| [training_progress_log.csv](results/data/training_progress_log.csv) | Baseline training progress |
+| [bad_reward_eval_custom_env.csv](results/data/bad_reward_eval_custom_env.csv) | Bad reward evaluation in custom environment |
+| [bad_reward_eval_original_env.csv](results/data/bad_reward_eval_original_env.csv) | Bad reward evaluation in original environment |
+| [bad_reward_training_episodes_log.csv](results/data/bad_reward_training_episodes_log.csv) | Bad reward episode logs |
+| [bad_reward_training_progress_log.csv](results/data/bad_reward_training_progress_log.csv) | Bad reward training progress |
+| [improved_reward_eval_improved_env.csv](results/data/improved_reward_eval_improved_env.csv) | Improved reward evaluation in shaped environment |
+| [improved_reward_eval_original_env.csv](results/data/improved_reward_eval_original_env.csv) | Improved reward evaluation in original environment |
+| [improved_reward_training_episodes_log.csv](results/data/improved_reward_training_episodes_log.csv) | Improved reward episode logs |
+| [improved_reward_training_progress_log.csv](results/data/improved_reward_training_progress_log.csv) | Improved reward training progress |
+| [phase3_comparison_per_episode.csv](results/data/phase3_comparison_per_episode.csv) | Per-episode comparison of all three agents |
+| [phase3_comparison_summary.csv](results/data/phase3_comparison_summary.csv) | Summary of experimental results |
 
 ### Results Summary
 
