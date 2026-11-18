@@ -131,18 +131,6 @@ You can replace the filename to load either the bad reward or improved reward mo
 - The improved reward agent did not outperform the baseline agent.
 - More experiments are required to establish stronger statistical conclusions.
 
-## Conclusion
-
-This project demonstrates that reward design plays an important role in Reinforcement Learning. The bad reward experiment illustrates reward hacking, while Potential-Based Reward Shaping provides a structured approach to guiding agent behavior.
-
-The baseline agent achieved the best overall evaluation performance in these experiments.
-
-## Author
-
-**Zain Mustafa**
-
-GitHub: [@zainmustafa148](https://github.com/zainmustafa148)
-
 ---
 
 ## Results & Visualizations
@@ -209,3 +197,15 @@ The following CSV files contain training logs, evaluation results, and model com
 | Improved Reward PPO | 230.2 | 9/10 |
 
 **Key Observation:** The baseline PPO achieved the highest mean original reward. The intentionally flawed reward function demonstrated reward hacking, while Potential-Based Reward Shaping substantially improved performance compared with the bad reward agent, although it did not outperform the baseline.
+
+## Conclusion
+
+This project demonstrates that reward design plays an important role in Reinforcement Learning. The bad reward experiment illustrates reward hacking, while Potential-Based Reward Shaping provides a structured approach to guiding agent behavior.
+
+The baseline agent achieved the best overall evaluation performance in these experiments.
+
+## Author
+
+**Zain Mustafa**
+
+GitHub: [@zainmustafa148](https://github.com/zainmustafa148)
