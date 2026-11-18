@@ -143,6 +143,4 @@ The baseline agent achieved the best overall evaluation performance in these exp
 
 GitHub: [@zainmustafa148](https://github.com/zainmustafa148)
 
-## License
 
-Add a license if you intend to specify permissions for reuse and distribution.
