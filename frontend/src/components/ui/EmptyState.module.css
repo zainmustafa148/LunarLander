@@ -1,0 +1,31 @@
+.card {
+  padding: var(--space-6) var(--space-5);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--space-3);
+  background: var(--color-primary-soft);
+  color: var(--color-link);
+  border-radius: var(--radius-md);
+}
+
+.title {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xl);
+}
+
+.body {
+  color: var(--color-text-muted);
+}
+
+.body > :last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,125 @@
+.shared {
+  margin-bottom: var(--space-5);
+}
+
+.sharedTitle {
+  margin-bottom: var(--space-1);
+  font-size: 1rem;
+}
+
+.sharedText {
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.config {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.config dt {
+  color: var(--color-text-subtle);
+  font-size: 0.72rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.config dd {
+  margin: 2px 0 0;
+  font-weight: var(--weight-medium);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  height: 100%;
+  border-left: 4px solid var(--model-color);
+}
+
+.kicker {
+  margin-bottom: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: var(--space-2);
+  font-size: 1.125rem;
+}
+
+.question {
+  color: var(--color-text-muted);
+}
+
+.quote {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-sunken);
+  border-radius: var(--radius-sm);
+  font-style: italic;
+  font-size: 0.8125rem;
+}
+
+.formula {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  overflow-x: auto;
+  background: var(--color-surface-sunken);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.label {
+  margin: var(--space-4) 0 var(--space-2);
+  font-size: 0.8125rem;
+  font-weight: var(--weight-semibold);
+}
+
+.bullets {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-5);
+}
+
+.bullets li {
+  margin-bottom: var(--space-1);
+}
+
+.note {
+  margin: 0 0 var(--space-3);
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.caveat {
+  padding: var(--space-3);
+  background: var(--color-warning-soft);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: var(--weight-semibold);
+}
+
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

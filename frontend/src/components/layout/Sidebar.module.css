@@ -1,0 +1,186 @@
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  width: var(--sidebar-width);
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border-subtle);
+  transition:
+    width var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  height: var(--topbar-height);
+  padding: 0 var(--space-3);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-on-primary);
+  border-radius: var(--radius-md);
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: var(--leading-tight);
+}
+
+.brandName {
+  font-weight: var(--weight-bold);
+  white-space: nowrap;
+}
+
+.brandTagline {
+  margin-top: 2px;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.closeButton,
+.railToggle {
+  display: none;
+}
+
+.nav {
+  flex: 1;
+  padding: var(--space-4) var(--space-3);
+  overflow-y: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
+}
+
+.linkIcon {
+  flex-shrink: 0;
+}
+
+.link:hover {
+  background: var(--color-surface-sunken);
+  color: var(--color-text);
+}
+
+/* Active state uses a background, bolder text and an edge bar, so it is not colour alone. */
+.active,
+.active:hover {
+  background: var(--color-primary-soft);
+  color: var(--color-link);
+  font-weight: var(--weight-semibold);
+  box-shadow: inset 3px 0 0 var(--color-primary);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.footerNote {
+  margin: 0;
+  color: var(--color-text-subtle);
+  font-size: var(--text-xs);
+  line-height: var(--leading-snug);
+}
+
+/* Tablet: icon rail, expandable as an overlay */
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .sidebar {
+    width: var(--sidebar-width-collapsed);
+  }
+
+  .sidebar.expanded {
+    width: var(--sidebar-width);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .railToggle {
+    display: inline-flex;
+  }
+
+  .sidebar:not(.expanded) .brandText,
+  .sidebar:not(.expanded) .label,
+  .sidebar:not(.expanded) .footerNote {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .sidebar:not(.expanded) .header,
+  .sidebar:not(.expanded) .footer {
+    justify-content: center;
+  }
+
+  .sidebar:not(.expanded) .link {
+    justify-content: center;
+  }
+}
+
+/* Mobile: off-canvas drawer */
+@media (max-width: 639.98px) {
+  .sidebar {
+    width: min(18rem, 85vw);
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: none;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .closeButton {
+    display: inline-flex;
+  }
+}
