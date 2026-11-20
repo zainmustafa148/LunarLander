@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.details {
+  font-size: var(--text-sm);
+}
+
+.details summary {
+  width: fit-content;
+  padding: var(--space-1) 0;
+  color: var(--color-link);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+}
+
+.details[open] summary {
+  margin-bottom: var(--space-2);
+}

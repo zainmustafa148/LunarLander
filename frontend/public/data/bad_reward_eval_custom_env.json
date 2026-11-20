@@ -1,0 +1,17 @@
+{
+  "source": "results/data/bad_reward_eval_custom_env.csv",
+  "columns": ["episode","seed","custom_reward","original_reward","length","outcome_original_rule","wrapper_landing_bonus","terminated","truncated"],
+  "rowCount": 10,
+  "rows": [
+    [1,2024,999,-602.0616195225613,1000,"TIMEOUT (hovering)",false,false,true],
+    [2,2025,999,-596.6470723623561,1000,"TIMEOUT (hovering)",false,false,true],
+    [3,2026,999,-623.214305713869,1000,"TIMEOUT (hovering)",false,false,true],
+    [4,2027,999,-585.0677627342221,1000,"TIMEOUT (hovering)",false,false,true],
+    [5,2028,999,-595.7730166838259,1000,"TIMEOUT (hovering)",false,false,true],
+    [6,2029,999,-607.9343376693367,1000,"TIMEOUT (hovering)",false,false,true],
+    [7,2030,999,-625.8108601872311,1000,"TIMEOUT (hovering)",false,false,true],
+    [8,2031,999,-582.417474405958,1000,"TIMEOUT (hovering)",false,false,true],
+    [9,2032,999,-596.6103259386799,1000,"TIMEOUT (hovering)",false,false,true],
+    [10,2033,999,-576.5045651245464,1000,"TIMEOUT (hovering)",false,false,true]
+  ]
+}

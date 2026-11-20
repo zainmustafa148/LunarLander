@@ -1,0 +1,17 @@
+{
+  "source": "results/data/improved_reward_eval_original_env.csv",
+  "columns": ["episode","seed","original_reward","length","outcome","terminated","truncated"],
+  "rowCount": 10,
+  "rows": [
+    [1,2024,253.02984654748425,417,"LANDED",true,false],
+    [2,2025,259.29933068937726,396,"LANDED",true,false],
+    [3,2026,226.19074367011402,445,"LANDED",true,false],
+    [4,2027,273.9868106225036,411,"LANDED",true,false],
+    [5,2028,256.3215624937157,419,"LANDED",true,false],
+    [6,2029,245.25876475172018,414,"LANDED",true,false],
+    [7,2030,230.9589476406343,405,"LANDED",true,false],
+    [8,2031,257.8873980897939,440,"LANDED",true,false],
+    [9,2032,18.716211186333183,381,"CRASHED",true,false],
+    [10,2033,280.3955080392011,389,"LANDED",true,false]
+  ]
+}
