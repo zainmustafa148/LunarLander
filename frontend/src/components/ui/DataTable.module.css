@@ -1,4 +1,5 @@
 .scroll {
+  position: relative; /* contains visually hidden text (position: absolute) inside scrolled cells */
   overflow-x: auto;
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-md);
@@ -38,4 +39,8 @@
 .numeric {
   text-align: right !important;
   font-variant-numeric: tabular-nums;
+}
+
+.text {
+  min-width: 0;
 }

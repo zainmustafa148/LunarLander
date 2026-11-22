@@ -13,11 +13,11 @@ import Callout from '../../components/ui/Callout.jsx'
 import DataTable from '../../components/ui/DataTable.jsx'
 import MetricCard from '../../components/ui/MetricCard.jsx'
 import Tabs, { TabPanel } from '../../components/ui/Tabs.jsx'
-import styles from './Phase5Preview.module.css'
+import styles from './ResultsAnalytics.module.css'
 
 /*
- * TEMPORARY. Shows the Phase 5 charts and primitives so they can be checked in the browser.
- * Phase 6 replaces this with the final Results & Analytics layout; delete this folder then.
+ * Results & Analytics: the evaluation, training and data-check views, built on the Phase 5 charts.
+ * Every chart reads the verified static datasets in public/data.
  */
 const TABS = [
   { id: 'evaluation', label: 'Evaluation episodes' },
@@ -58,7 +58,7 @@ function LoadedDataCheck() {
   })
   return (
     <Section
-      id="p5-data-check"
+      id="res-data-check"
       title="Loaded data check"
       description="Row and column counts of the files this page loaded. They should equal the counts printed by scripts/csv-to-json.mjs and the number of CSV data rows."
     >
@@ -76,23 +76,23 @@ function LoadedDataCheck() {
   )
 }
 
-export default function Phase5Preview() {
+export default function ResultsAnalytics() {
   const [tab, setTab] = useState('evaluation')
   return (
     <div className={styles.preview}>
-      <Callout tone="warning" title="Temporary Phase 5 preview">
-        These charts check the Phase 5 components in the browser. Phase 6 replaces this page with the final Results &amp; Analytics layout.
+      <Callout title="How to read these results">
+        Models are compared on the original environment reward only, with the original landing rule. Each model was evaluated over ten episodes after a single training run, so differences are observations, not statistically established. Custom and shaped rewards appear only under Training objectives, on separate charts.
       </Callout>
 
       <div>
-        <Tabs label="Phase 5 chart preview" idPrefix="phase5" tabs={TABS} value={tab} onChange={setTab} />
+        <Tabs label="Results views" idPrefix="results" tabs={TABS} value={tab} onChange={setTab} />
 
-        <TabPanel idPrefix="phase5" id="evaluation" value={tab}>
+        <TabPanel idPrefix="results" id="evaluation" value={tab}>
           <div className={styles.stack}>
             <Section
-              id="p5-summary"
+              id="res-summary"
               title="Evaluation summary"
-              description="Original environment reward only, from the Phase 4 results data."
+              description="Original environment reward only, from the verified evaluation results."
             >
               <div className={styles.metrics}>
                 {MODEL_IDS.map((id) => (
@@ -108,7 +108,7 @@ export default function Phase5Preview() {
               </div>
             </Section>
             <Section
-              id="p5-episodes"
+              id="res-episodes"
               title="Per-episode results"
               description="Every evaluation episode, loaded from the converted per-episode file."
             >
@@ -120,9 +120,9 @@ export default function Phase5Preview() {
           </div>
         </TabPanel>
 
-        <TabPanel idPrefix="phase5" id="training" value={tab}>
+        <TabPanel idPrefix="results" id="training" value={tab}>
           <Section
-            id="p5-training"
+            id="res-training"
             title="Training curves"
             description="Original environment reward during training, for all three models."
           >
@@ -130,7 +130,7 @@ export default function Phase5Preview() {
           </Section>
         </TabPanel>
 
-        <TabPanel idPrefix="phase5" id="objectives" value={tab}>
+        <TabPanel idPrefix="results" id="objectives" value={tab}>
           <div className={styles.stack}>
             <Callout tone="warning" title="Different scales, not comparable">
               Each chart below shows one model&apos;s reward under its own training objective. The scales differ, so the charts are
@@ -144,7 +144,7 @@ export default function Phase5Preview() {
           </div>
         </TabPanel>
 
-        <TabPanel idPrefix="phase5" id="data" value={tab}>
+        <TabPanel idPrefix="results" id="data" value={tab}>
           <LoadedDataCheck />
         </TabPanel>
       </div>

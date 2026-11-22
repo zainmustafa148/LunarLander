@@ -1,19 +1,16 @@
-import PagePlaceholder from '../components/layout/PagePlaceholder.jsx'
+import PageBody from '../components/layout/PageBody.jsx'
+import PageHeader from '../components/layout/PageHeader.jsx'
+import ResearchDocs from '../features/docs/ResearchDocs.jsx'
 
 export default function ResearchDocsPage() {
   return (
-    <PagePlaceholder
-      eyebrow="Documentation"
-      title="Research & Docs"
-      description="The original research report, presented as readable website content."
-      planned={[
-        'The original report organized into sections: abstract, introduction, objectives, background, PPO, environment, methodology, experiments, results, discussion, limitations, conclusion and references',
-        'Sticky section navigation',
-        'Formulas rendered with KaTeX',
-        'Access to the original report document',
-        'The report’s graphs, the CSV datasets and the recorded episode videos',
-      ]}
-      note="Planned for a later phase. This page will present the report as written and will not replace it with generic explanations."
-    />
+    <PageBody>
+      <PageHeader
+        eyebrow="Documentation"
+        title="Research & Docs"
+        description="Methodology, environment, algorithm, reward functions, evaluation, limitations and the files behind the project."
+      />
+      <ResearchDocs />
+    </PageBody>
   )
 }

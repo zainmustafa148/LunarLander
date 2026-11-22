@@ -1,16 +1,16 @@
-import PagePlaceholder from '../components/layout/PagePlaceholder.jsx'
+import PageBody from '../components/layout/PageBody.jsx'
+import PageHeader from '../components/layout/PageHeader.jsx'
+import RewardShaping from '../features/shaping/RewardShaping.jsx'
 
 export default function RewardShapingPage() {
   return (
-    <PagePlaceholder
-      eyebrow="Experiment"
-      title="Reward Shaping"
-      description="Potential-based reward shaping (PBRS) and how it compares with the bad reward."
-      planned={[
-        'PBRS explainer: formula, telescoping and terminated versus truncated',
-        'A potential explorer with sliders for the 8 observation values, using the report’s exact formula and weights',
-        'Side-by-side comparison of the Bad and Improved wrappers',
-      ]}
-    />
+    <PageBody>
+      <PageHeader
+        eyebrow="Experiment 3"
+        title="Reward Shaping"
+        description="Potential-based shaping added to the original reward: the formula, the weights, what was measured, and why it did not beat the Baseline."
+      />
+      <RewardShaping />
+    </PageBody>
   )
 }

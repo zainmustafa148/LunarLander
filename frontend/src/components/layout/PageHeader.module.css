@@ -14,7 +14,7 @@
 .eyebrow {
   margin-bottom: var(--space-2);
   color: var(--color-link);
-  font-size: var(--text-xs);
+  font-size: 0.72rem;
   font-weight: var(--weight-semibold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -22,15 +22,22 @@
 
 .title {
   margin-bottom: var(--space-2);
+  font-size: 1.75rem;
 }
 
 .description {
   margin: 0;
   color: var(--color-text-muted);
-  font-size: var(--text-lg);
+  font-size: 1rem;
 }
 
 .actions {
   display: flex;
   gap: var(--space-2);
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
 }

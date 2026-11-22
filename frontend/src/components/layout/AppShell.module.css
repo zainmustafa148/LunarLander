@@ -20,6 +20,20 @@
 .container {
   max-width: var(--content-max-width);
   margin: 0 auto;
+  animation: page-enter var(--duration-slow) var(--ease-standard);
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container {
+    animation: none;
+  }
 }
 
 .backdrop {

@@ -1,17 +1,16 @@
-import PagePlaceholder from '../components/layout/PagePlaceholder.jsx'
+import PageBody from '../components/layout/PageBody.jsx'
+import PageHeader from '../components/layout/PageHeader.jsx'
+import RewardHacking from '../features/hacking/RewardHacking.jsx'
 
 export default function RewardHackingPage() {
   return (
-    <PagePlaceholder
-      eyebrow="Experiment"
-      title="Reward Hacking"
-      description="How a poorly designed reward can teach an agent to exploit it instead of landing."
-      planned={[
-        'The reward rule and the hypothesis H₁',
-        'An interactive return calculator (survive versus land after N steps, with γ), labelled illustrative, not measured',
-        'The measured outcome',
-        'Original and custom rewards kept clearly separate',
-      ]}
-    />
+    <PageBody>
+      <PageHeader
+        eyebrow="Experiment 2"
+        title="Reward Hacking Demonstration"
+        description="What happens when a reward pays for staying alive: the agent scored 999 on its own reward and landed in none of its ten evaluation episodes."
+      />
+      <RewardHacking />
+    </PageBody>
   )
 }

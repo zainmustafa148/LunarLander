@@ -1,0 +1,10 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
+.card { position: relative; height: 100%; transition: border-color var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard); }
+.card:hover { border-color: var(--color-link); transform: translateY(-2px); }
+.icon { margin-bottom: var(--space-2); color: var(--color-link); }
+.title { margin: 0 0 var(--space-1); font-size: 1rem; }
+.link { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--color-text); text-decoration: none; }
+/* The whole card is clickable through the heading link. */
+.link::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.text { margin: 0; color: var(--color-text-muted); font-size: 0.8125rem; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }

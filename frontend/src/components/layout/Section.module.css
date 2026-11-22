@@ -1,5 +1,6 @@
 .section {
   margin-bottom: var(--space-8);
+  scroll-margin-top: calc(var(--topbar-height) + var(--space-4));
 }
 
 .heading {

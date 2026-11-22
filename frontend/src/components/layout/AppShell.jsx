@@ -86,7 +86,7 @@ export default function AppShell() {
           menuButtonRef={menuButtonRef}
         />
         <main id="main-content" className={styles.main} tabIndex={-1}>
-          <div className={styles.container}>
+          <div key={pathname} className={styles.container}>
             <Outlet />
           </div>
         </main>

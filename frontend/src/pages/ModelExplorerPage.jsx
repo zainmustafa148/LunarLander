@@ -1,17 +1,16 @@
-import PagePlaceholder from '../components/layout/PagePlaceholder.jsx'
+import PageBody from '../components/layout/PageBody.jsx'
+import PageHeader from '../components/layout/PageHeader.jsx'
+import ModelExplorer from '../features/models/ModelExplorer.jsx'
 
 export default function ModelExplorerPage() {
   return (
-    <PagePlaceholder
-      eyebrow="Models"
-      title="Model Explorer"
-      description="Browse the Baseline, Bad Reward and Improved models and how they were configured."
-      planned={[
-        'One card or tab per model: configuration, reward definition and file names',
-        'A shared PPO configuration table',
-        'Side-by-side model comparison',
-      ]}
-      note="Later, model metadata and downloads may come from the Flask backend."
-    />
+    <PageBody>
+      <PageHeader
+        eyebrow="Models"
+        title="Model Explorer"
+        description="The three PPO agents: how each was trained, which reward it used and how it performed in the original environment."
+      />
+      <ModelExplorer />
+    </PageBody>
   )
 }

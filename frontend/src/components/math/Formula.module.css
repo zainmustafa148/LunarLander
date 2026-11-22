@@ -1,0 +1,20 @@
+.block {
+  position: relative; /* keeps KaTeX's visually hidden MathML inside the scroll area */
+  max-width: 100%;
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-4);
+  overflow-x: auto;
+  background: var(--color-surface-sunken);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+}
+
+.block :global(.katex-display) {
+  margin: 0.5em 0;
+}
+
+.inline {
+  position: relative;
+  white-space: nowrap;
+}

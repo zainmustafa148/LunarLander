@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import ExploreSection from '../features/overview/ExploreSection.jsx'
 import Section from '../components/layout/Section.jsx'
 import ExperimentsSection from '../features/overview/ExperimentsSection.jsx'
 import FindingsSection from '../features/overview/FindingsSection.jsx'
@@ -41,12 +42,16 @@ export default function OverviewPage() {
         <FindingsSection />
       </Section>
 
+      <Section id="explore" title="Explore the project" description="Each part of the project has its own page.">
+        <ExploreSection />
+      </Section>
+
       <p className={styles.sources}>
         Sources: the {SOURCES.report} and the{' '}
         <a href={SOURCES.repoUrl} target="_blank" rel="noopener noreferrer">
           project repository
         </a>
-        . The full report, graphs, datasets and recorded episodes are planned for{' '}
+        . The report, graphs, datasets and recorded episodes are on{' '}
         <Link to="/docs">Research &amp; Docs</Link>.
       </p>
     </div>
